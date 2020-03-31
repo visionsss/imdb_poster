@@ -13,7 +13,7 @@ import multiprocessing    # 多进程，加速爬取
 import shutil  # 最后爬取不到的封面，复制no_found封面
 ```
 ## 第一步 读取所有电影名称
-(ml-100k下载)[http://files.grouplens.org/datasets/movielens/ml-100k.zip]，下载不了也没关系，后面GitHub有
+[ml-100k下载](http://files.grouplens.org/datasets/movielens/ml-100k.zip)，下载不了也没关系，后面GitHub有
 ```python
 def get_movie_names(item_path='./ml-100k/u.item'):
     """获取电影名称./ml-100k/u.item
@@ -230,3 +230,5 @@ if __name__ == '__main__':
     fill(movies_data)  # 将爬取不到的封面用一张图(no_found.jpg)代替
 
 ```
+GItHub地址[https://github.com/visionsss/imdb_poster](https://github.com/visionsss/imdb_poster)
+result存放爬取的封面图片
